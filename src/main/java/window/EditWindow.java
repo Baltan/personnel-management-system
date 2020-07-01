@@ -8,7 +8,7 @@ import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import person.Person;
-import personOperation.PersonOperation;
+import operation.PersonOperation;
 
 import javax.swing.*;
 import java.awt.*;

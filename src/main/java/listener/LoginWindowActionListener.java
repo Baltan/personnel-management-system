@@ -1,7 +1,7 @@
 package listener;
 
 import lombok.Data;
-import personOperation.UserOperation;
+import operation.UserOperation;
 import window.EditWindow;
 import window.LoginWindow;
 import window.MainWindow;

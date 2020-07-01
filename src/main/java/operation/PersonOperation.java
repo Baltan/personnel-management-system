@@ -1,4 +1,4 @@
-package personOperation;
+package operation;
 
 import lombok.Data;
 import person.Person;

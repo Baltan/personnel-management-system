@@ -1,7 +1,7 @@
 package listener;
 
 import lombok.Data;
-import personOperation.PersonOperation;
+import operation.PersonOperation;
 import window.EditWindow;
 
 import java.awt.event.ActionEvent;

@@ -43,7 +43,6 @@ public class PersonOperation {
             preparedStatement.setInt(5, person.getSalary());
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
-            System.out.println("失败原因：");
             e.printStackTrace();
         } finally {
             DatabaseUtil.DatabaseClose(null, preparedStatement, connection);
@@ -74,7 +73,6 @@ public class PersonOperation {
             }
             preparedStatement.executeBatch();
         } catch (SQLException e) {
-            System.out.println("失败原因：");
             e.printStackTrace();
         } finally {
             DatabaseUtil.DatabaseClose(null, preparedStatement, connection);
@@ -101,7 +99,6 @@ public class PersonOperation {
             preparedStatement.setInt(5, person.getSalary());
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
-            System.out.println("失败原因：");
             e.printStackTrace();
         } finally {
             DatabaseUtil.DatabaseClose(null, preparedStatement, connection);
@@ -158,7 +155,6 @@ public class PersonOperation {
                     JOptionPane.showMessageDialog(null, "没有找到匹配记录");
                 }
             } catch (SQLException e) {
-                System.out.println("失败原因：");
                 e.printStackTrace();
             } finally {
                 DatabaseUtil.DatabaseClose(resultSet, statement, connection);
@@ -222,7 +218,6 @@ public class PersonOperation {
                 JOptionPane.showMessageDialog(null, "没有找到匹配记录");
             }
         } catch (SQLException e) {
-            System.out.println("失败原因：");
             e.printStackTrace();
         } finally {
             DatabaseUtil.DatabaseClose(resultSet, statement, connection);
@@ -256,7 +251,6 @@ public class PersonOperation {
                 objectsArrayList.add(personInfo);
             }
         } catch (SQLException e) {
-            System.out.println("失败原因：");
             e.printStackTrace();
         } finally {
             DatabaseUtil.DatabaseClose(resultSet, statement, connection);
@@ -278,7 +272,6 @@ public class PersonOperation {
             statement = connection.createStatement();
             statement.executeUpdate(sql);
         } catch (SQLException e) {
-            System.out.println("失败原因：");
             e.printStackTrace();
         } finally {
             DatabaseUtil.DatabaseClose(null, statement, connection);

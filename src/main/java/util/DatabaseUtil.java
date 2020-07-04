@@ -19,10 +19,8 @@ public class DatabaseUtil {
     static {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            System.out.println("驱动成功");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
-            System.out.println("驱动失败");
         }
     }
 
@@ -32,16 +30,14 @@ public class DatabaseUtil {
      * @return
      */
     public static Connection getConnection() {
-        String url = "jdbc:mysql://localhost:3306/PSM";
+        String url = "jdbc:mysql://localhost:3306/psm";
         String username = "root";
         String password = "123456";
         Connection connection = null;
 
         try {
             connection = DriverManager.getConnection(url, username, password);
-            System.out.println("数据库连接成功");
         } catch (SQLException e) {
-            System.out.println("数据库连接失败");
             e.printStackTrace();
         }
         return connection;
